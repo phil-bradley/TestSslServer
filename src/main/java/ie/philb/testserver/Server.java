@@ -43,15 +43,6 @@ public class Server {
 
         ServerSocketFactory ssf = sslcontext.getServerSocketFactory();
         ss = (SSLServerSocket) ssf.createServerSocket(port);
-
-        /**
-         * *************************************************
-         */
-//        ServerSocketFactory ssf = ServerSocketFactory.getDefault();
-//        ss = ssf.createServerSocket(port);
-        //SSLServerSocketFactory ssfx = (SSLServerSocketFactory) SSLServerSocketFactory.getDefault();
-        //this.ss = ssfx.createServerSocket(port);
-        //ss = new ServerSocket(port);
     }
 
     public void run() throws IOException {
